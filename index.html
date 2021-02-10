@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="./node_modules/nouislider/distribute/nouislider.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./application.css" />
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <script>
-      console.log("Hello World");
-    </script>
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message" id="application">
+          <div class="message__text" :style="{'font-size': fontSize}">
+            Hello World
+          </div>
+        </div>
+        <div class="message-size">
+          <div class="message-size__slider" id="message-size__slider"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/nouislider/distribute/nouislider.min.js"></script>
+    <script src="./node_modules/vue/dist/vue.global.js"></script>
+    <script src="./application.js"></script>
   </body>
 </html>
